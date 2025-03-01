@@ -66,6 +66,7 @@ body{
   }
   .name {
     display: flex;
+   
   }
   .age-range {
     display: flex;
@@ -139,6 +140,7 @@ body{
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
   input::placeholder{
     font-family: var(--font-family);
   }
@@ -163,5 +165,8 @@ body{
     .modal-content {
       width: 100vw;
       max-width: 400px;
+    }
+    .name{
+        flex-direction: column;
     }
   }
