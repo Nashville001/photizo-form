@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Photizo Registration Form</title>
+  </head>
+  <body>
+    <div id="formModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h1>Photizo Conference '25</h1>
+        <p>Embracing The GOD Given Light</p>
+
+        <form>
+          <label>Full Name *</label>
+          <div class="name">
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+          </div>
+
+          <label>Age Range</label>
+          <div class="age-range">
+            <div>
+              <input type="checkbox" id="age1" /><label for="age1"
+                >15 - 30</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="age2" /><label for="age2"
+                >31 - 45</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="age3" /><label for="age3"
+                >46 - 60</label
+              >
+            </div>
+          </div>
+
+          <label>E-mail *</label>
+          <input type="email" placeholder="example@example.com" required />
+
+          <label>Phone Number *</label>
+          <input type="tel" placeholder="(000) 000-00000" required />
+
+          <label>First time to attend this conference? *</label>
+          <div class="attend">
+            <div>
+              <input type="radio" id="firstTimeYes" name="firstTime" /><label
+                for="firstTimeYes"
+                >Yes</label
+              >
+            </div>
+            <div>
+              <input type="radio" id="firstTimeNo" name="firstTime" /><label
+                for="firstTimeNo"
+                >No</label
+              >
+            </div>
+          </div>
+
+          <label>What are your expectations for Photizo?</label>
+          <textarea placeholder="Share your thoughts"></textarea>
+
+          <label>I will attend:</label>
+          <div class="attend">
+            <div>
+              <input type="checkbox" id="event1" /><label for="event1"
+                >Event 1 - February 15</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="event2" /><label for="event2"
+                >Event 2 - February 16</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="event3" /><label for="event3"
+                >Event 3 - February 17</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="allEvents" /><label for="allEvents"
+                >All Events</label
+              >
+            </div>
+          </div>
+
+          <label>Mode of Attendance *</label>
+          <select title="Please Select" required>
+            <option value="" disabled selected>Please Select</option>
+            <option value="online">Online</option>
+            <option value="in-person">In-Person</option>
+          </select>
+
+          <label>How did you hear about this conference *</label>
+          <select title="Please Select" required>
+            <option value="" disabled selected>Select an Option</option>
+            <option value="online">Google</option>
+            <option value="in-person">On Social media</option>
+            <option value="in-person">From a friend</option>
+            <option value="in-person">Ads</option>
+            <option value="in-person">Other</option>
+          </select>
+
+          <label>Upload Payment Receipt</label>
+          <div class="inner-input">
+            <div class="upload-box" id="drop-area">
+              <h2>Browse Files</h2>
+              <svg
+                width="64px"
+                height="64px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g id="File / Cloud_Upload">
+                    <path
+                      id="Vector"
+                      d="M12 16V10M12 10L9 12M12 10L15 12M23 15C23 12.7909 21.2091 11 19 11C18.9764 11 18.9532 11.0002 18.9297 11.0006C18.4447 7.60802 15.5267 5 12 5C9.20335 5 6.79019 6.64004 5.66895 9.01082C3.06206 9.18144 1 11.3498 1 13.9999C1 16.7613 3.23858 19.0001 6 19.0001L19 19C21.2091 19 23 17.2091 23 15Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <p id="upload-text">Drag and Drop file or Select File here</p>
+              <input
+                title="file"
+                type="file"
+                id="fileInput"
+                accept=".jpegs, .png, .pdf"
+              />
+            </div>
+            <p class="file-name" id="file-name"></p>
+          </div>
+
+          <button type="submit" id="submit">Submit Form</button>
+        </form>
+      </div>
+    </div>
+    <script src="/js/form.js"></script>
+  </body>
+</html>
